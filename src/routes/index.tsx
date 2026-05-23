@@ -1,5 +1,4 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import heroImage from "@/assets/hero_light.png";
 import radhaImage from "@/assets/Prof. Radha 2.jpg";
 
 
@@ -10,7 +9,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "International conference at IIT Madras, Chennai bringing together leading researchers in applied harmonic analysis and data science, 15–18 December 2026.",
+          "International conference at IIT Madras, Chennai bringing together eminent mathematicians in applied harmonic analysis and data science, 15–18 December 2026.",
       },
       {
         property: "og:title",
@@ -29,20 +28,27 @@ export const Route = createFileRoute("/")({
 const speakers = [
   { name: "Akram Aldroubi", affiliation: "Vanderbilt University, USA" },
   { name: "Davide Barbieri", affiliation: "Universidad Autónoma de Madrid, Spain" },
+  { name: "Biswaranjan Behera", affiliation: "ISI Kolkata, India" },
   { name: "Ayush Bhandari", affiliation: "Imperial College London, UK" },
   { name: "Alex Iosevich", affiliation: "University of Rochester, USA" },
-  { name: "Franz Luef", affiliation: "Norwegian Univ. of Science and Technology, Norway" },
+  { name: "Felix Krahmer", affiliation: "TU Munich, Germany" },
+  { name: "Franz Luef", affiliation: "Norwegian University of Science and Technology, Norway" },
+  { name: "E.K. Narayanan", affiliation: "IISc Bangalore, India" },
+  { name: "Rahul Parhi", affiliation: "University of California San Diego, USA" },
   { name: "Sergei Pereverzyev", affiliation: "Johann Radon Institute, Austria" },
+  { name: "Niraj Kumar Shukla", affiliation: "IIT Indore, India" },
   { name: "Bharath Sriperumbudur", affiliation: "Pennsylvania State University, USA" },
+  { name: "S. Thangavelu", affiliation: "IISc Bangalore, India" },
+  { name: "Sergey Tikhonov", affiliation: "Centre de Recerca Matemàtica, Spain" },
   { name: "Dingxuan Zhou", affiliation: "University of Sydney, Australia" },
 ];
 
 const organizers = [
+  "A. Satish Kumar (Convenor)",
+  "S. Sivananthan (Co-Convenor)",
   "A. Antony Selvan",
   "Ayush Bhandari",
-  "A. Satish Kumar",
   "Niraj Kumar Shukla",
-  "S. Sivananthan",
   "Bharath Sriperumbudur",
   "Jitendriya Swain",
   "D. Venku Naidu",
@@ -51,60 +57,59 @@ const organizers = [
 function HomePage() {
   return (
     <div>
-      {/* Hero */}
-      <section className="relative overflow-hidden border-b border-border">
-        <img
-          src={heroImage}
-          alt="Harmonic waves"
-          width={1920}
-          height={1080}
-          className="absolute inset-0 h-full w-full object-cover opacity-35"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/70 via-background/50 to-background" />
-        <div className="container-prose relative py-24 md:py-32 text-center">
-          <p className="text-[0.75rem] uppercase tracking-[0.4em] font-semibold text-accent">
-            International Conference · 2026
-          </p>
-          <h1 className="mt-6 font-serif text-4xl md:text-6xl font-bold leading-[1.1] text-foreground">
-            Applied Harmonic Analysis
-            <span className="block italic font-normal text-foreground/80">&amp; Data Science</span>
-          </h1>
-          <div className="rule-gold w-40 mx-auto my-7" />
-          <p className="font-serif text-xl md:text-2xl font-bold text-foreground">
-            15 – 18 December 2026
-          </p>
-          <p className="mt-2 text-sm font-semibold uppercase tracking-[0.25em] text-foreground">
-            Indian Institute of Technology Madras · Chennai, India
-          </p>
-          <div className="mt-10 flex flex-wrap justify-center gap-3">
-            <Link
-              to="/program"
-              className="inline-flex items-center border border-primary px-7 py-3 text-xs uppercase tracking-[0.22em] text-primary font-semibold transition-colors hover:bg-primary hover:text-primary-foreground"
-            >
-              View Program
-            </Link>
-          </div>
-        </div>
-      </section>
-
       {/* Welcome & Felicitation */}
-      <section className="container-prose py-20">
-        <div className="grid md:grid-cols-3 gap-10 items-center max-w-5xl mx-auto">
-          {/* Welcome Text */}
-          <div className="md:col-span-2 space-y-4">
-            <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-2">
-              Welcome
-            </p>
-            <p className="text-foreground/80 leading-relaxed text-base">
-              We welcome you to the International Conference on{" "}
-              <em className="text-foreground font-medium">Applied Harmonic Analysis and Data Science</em>,
-              hosted by the Department of Mathematics at the Indian Institute of Technology Madras. This event
-              brings together leading researchers to share advances in harmonic analysis, sampling theory,
-              machine learning, and modern data science.
-            </p>
-            <p className="text-foreground/90 font-medium leading-relaxed text-base border-l-2 border-accent pl-4 italic">
-              As part of the conference, one session will be devoted to felicitating Prof. R. Radha on the occasion of her 60th birthday.
-            </p>
+      <section className="container-prose py-16">
+        <div className="grid md:grid-cols-3 gap-10 items-start max-w-5xl mx-auto">
+          {/* Welcome Text, Dates, Venue, and Themes */}
+          <div className="md:col-span-2 space-y-6">
+            <div>
+              <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-2">
+                Welcome
+              </p>
+              <p className="text-foreground/80 leading-relaxed text-base">
+                We welcome you to the International Conference on{" "}
+                <em className="text-foreground font-medium">Applied Harmonic Analysis and Data Science</em>,
+                hosted by the Department of Mathematics at the Indian Institute of Technology Madras. This event
+                brings together eminent mathematicians to share advances in harmonic analysis, sampling theory,
+                machine learning, and modern data science.
+              </p>
+              <p className="mt-4 text-foreground/90 font-medium leading-relaxed text-base border-l-2 border-accent pl-4 italic">
+                As part of the conference, one session will be devoted to felicitating Prof. R. Radha on the occasion of her 60th birthday.
+              </p>
+            </div>
+
+            {/* Date & Venue in small font */}
+            <div className="pt-6 border-t border-rule grid sm:grid-cols-2 gap-4">
+              <div>
+                <p className="text-[0.65rem] uppercase tracking-[0.2em] text-accent font-semibold mb-1">Dates</p>
+                <p className="text-sm font-semibold text-foreground">15 – 18 December 2026</p>
+              </div>
+              <div>
+                <p className="text-[0.65rem] uppercase tracking-[0.2em] text-accent font-semibold mb-1">Venue</p>
+                <p className="text-sm font-semibold text-foreground">Indian Institute of Technology Madras, Chennai, India</p>
+              </div>
+            </div>
+
+            {/* Topics / Themes listed just below welcome */}
+            <div className="pt-6 border-t border-rule">
+              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-accent font-semibold mb-3">Conference Themes</p>
+              <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-foreground/80">
+                {[
+                  "Harmonic analysis",
+                  "Time frequency and Gabor analysis",
+                  "Frames, wavelets and operator theory",
+                  "Approximation theory",
+                  "Sampling and reconstruction theory",
+                  "Statistical learning and kernel methods",
+                  "Mathematical foundations of deep learning",
+                ].map((t) => (
+                  <li key={t} className="flex gap-2 leading-relaxed">
+                    <span className="text-accent mt-1.5 shrink-0 text-[0.6rem]">◆</span>
+                    <span>{t}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
           </div>
 
           {/* Prof. R. Radha Photo */}
@@ -124,85 +129,74 @@ function HomePage() {
           </div>
         </div>
       </section>
-      {/* Topics */}
-      <section className="border-y border-border bg-secondary/40">
-        <div className="container-prose py-16 max-w-4xl text-center">
-          <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-4">Themes</p>
-          <h2 className="font-serif text-3xl text-primary">Topics of the Conference</h2>
-          <div className="rule-gold w-24 mx-auto my-6" />
-          <ul className="grid sm:grid-cols-2 gap-x-10 gap-y-3 text-foreground mt-8 text-left">
-            {[
-              "Sampling and reconstruction theory",
-              "Time–frequency and Gabor analysis",
-              "Frames, wavelets and operator theory",
-              "Statistical learning and kernel methods",
-              "Inverse problems and regularization",
-              "Compressed sensing and sparse representations",
-              "Signal processing and unlimited sampling",
-              "Mathematical foundations of deep learning",
-            ].map((t) => (
-              <li key={t} className="flex gap-3 leading-relaxed">
-                <span className="text-accent mt-2 shrink-0">◆</span>
-                <span>{t}</span>
-              </li>
-            ))}
-          </ul>
-        </div>
-      </section>
 
       {/* Speakers */}
-      <section className="container-prose py-20 max-w-4xl text-center">
-        <div className="text-center mb-6">
-          <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-4">
+      <section className="border-t border-border bg-secondary/20">
+        <div className="container-prose py-16 max-w-4xl text-center">
+          <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-2">
             Confirmed Speakers
           </p>
-          <h2 className="font-serif text-3xl text-primary">Plenary Lectures</h2>
-          <div className="rule-gold w-24 mx-auto mt-5" />
-        </div>
-        <ul className="flex flex-wrap justify-center gap-x-8 gap-y-3 mt-8 font-serif text-lg text-foreground">
-          {speakers.map((s, i) => (
-            <li key={s.name} className="flex items-center gap-8">
-              <span>{s.name}</span>
-              {i < speakers.length - 1 && (
-                <span className="text-accent hidden sm:inline">·</span>
-              )}
-            </li>
-          ))}
-        </ul>
-        <div className="mt-10">
-          <Link
-            to="/speakers"
-            className="text-xs uppercase tracking-[0.22em] text-primary border-b border-accent pb-1 hover:text-accent transition-colors"
-          >
-            View Full Speakers
-          </Link>
+          <h2 className="font-serif text-2xl text-primary">Plenary Lectures</h2>
+          <div className="rule-gold w-16 mx-auto mt-4 mb-8" />
+          
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-x-8 gap-y-6 max-w-5xl mx-auto text-center">
+            {speakers.map((s) => (
+              <div key={s.name} className="flex flex-col items-center">
+                <span className="font-serif text-base font-semibold text-foreground leading-tight">{s.name}</span>
+                <span className="text-[0.7rem] text-muted-foreground mt-1 line-clamp-1">{s.affiliation}</span>
+              </div>
+            ))}
+          </div>
+
+          <div className="mt-10">
+            <Link
+              to="/speakers"
+              className="text-xs uppercase tracking-[0.22em] text-primary border-b border-accent pb-1 hover:text-accent transition-colors"
+            >
+              View Speakers
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* Organizers */}
-      <section className="border-t border-border bg-secondary/40">
+      <section className="border-t border-border bg-background">
         <div className="container-prose py-16 max-w-4xl text-center">
-          <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-4">
+          <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-2">
             Organizing Committee
           </p>
-          <h2 className="font-serif text-3xl text-primary">Convened by</h2>
-          <div className="rule-gold w-24 mx-auto my-6" />
-          <ul className="flex flex-wrap justify-center gap-x-8 gap-y-3 mt-6 font-serif text-lg text-foreground">
-            {organizers.map((o, i) => (
-              <li key={o} className="flex items-center gap-8">
-                {o}
-                {i < organizers.length - 1 && (
-                  <span className="text-accent hidden sm:inline">·</span>
-                )}
-              </li>
+          <h2 className="font-serif text-2xl text-primary">Convened by</h2>
+          <div className="rule-gold w-16 mx-auto mt-4 mb-8" />
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 max-w-4xl mx-auto text-center">
+            {organizers.map((o) => (
+              <div key={o} className="flex flex-col items-center">
+                <span className="font-serif text-base font-semibold text-foreground">{o}</span>
+              </div>
             ))}
-          </ul>
+          </div>
+
           <div className="mt-10">
             <Link
               to="/committee"
               className="text-xs uppercase tracking-[0.22em] text-primary border-b border-accent pb-1 hover:text-accent transition-colors"
             >
               View Full Committee
+            </Link>
+          </div>
+
+          <div className="mt-12 flex flex-wrap justify-center gap-4">
+            <Link
+              to="/program"
+              className="inline-flex items-center border border-primary px-7 py-3 text-xs uppercase tracking-[0.22em] text-primary font-semibold transition-colors hover:bg-primary hover:text-primary-foreground"
+            >
+              View Program Schedule
+            </Link>
+            <Link
+              to="/registration"
+              className="inline-flex items-center border border-primary bg-primary px-7 py-3 text-xs uppercase tracking-[0.22em] text-primary-foreground font-semibold transition-colors hover:bg-ink-deep"
+            >
+              Registration
             </Link>
           </div>
         </div>

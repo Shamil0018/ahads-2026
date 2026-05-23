@@ -85,77 +85,14 @@ function ProgramPage() {
         intro="The tentative daily schedule, featuring plenary lectures, contributed talks, and poster sessions. Session chairs and topics are currently to be decided (TBD)."
       />
 
-      <div className="space-y-16 mt-16">
-        {days.map((d) => (
-          <section key={d.date} className="overflow-x-auto">
-            <div className="flex items-baseline gap-4 mb-6">
-              <h2 className="font-serif text-2xl text-primary whitespace-nowrap">{d.date}</h2>
-              <div className="flex-1 h-px bg-border" />
-            </div>
-
-            {/* Header row for large screens */}
-            <div className="hidden md:grid md:grid-cols-[10rem_1.2fr_1fr_1.5fr] gap-6 pb-3 border-b border-border text-xs uppercase tracking-wider text-muted-foreground font-semibold">
-              <div>Time Slot</div>
-              <div>Category</div>
-              <div>Session Chair</div>
-              <div>Topic / Title</div>
-            </div>
-
-            <ul className="divide-y divide-border border-b border-border">
-              {d.items.map((item) => (
-                <li
-                  key={item.time + item.category}
-                  className="py-4 grid grid-cols-1 md:grid-cols-[10rem_1.2fr_1fr_1.5fr] gap-4 md:gap-6 md:items-baseline"
-                >
-                  {/* Time */}
-                  <span className="font-mono text-sm text-accent tracking-wider font-medium">{item.time}</span>
-
-                  {/* Category */}
-                  <span className="font-serif text-base text-foreground font-medium">{item.category}</span>
-
-                  {/* Chair */}
-                  <div className="text-sm text-muted-foreground">
-                    <span className="md:hidden font-semibold text-[0.65rem] uppercase tracking-wider block mb-1 text-accent/80">
-                      Session Chair:
-                    </span>
-                    <span>{item.chair}</span>
-                  </div>
-
-                  {/* Topic */}
-                  <div className="text-sm text-muted-foreground">
-                    <span className="md:hidden font-semibold text-[0.65rem] uppercase tracking-wider block mb-1 text-accent/80">
-                      Topic / Title:
-                    </span>
-                    <span className="font-serif italic">{item.topic}</span>
-                  </div>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
+      <div className="flex flex-col items-center justify-center border border-border bg-card p-12 text-center mt-12 shadow-soft">
+        <p className="text-[0.75rem] uppercase tracking-[0.4em] font-semibold text-accent mb-2">Schedule</p>
+        <h2 className="font-serif text-3xl font-semibold text-primary">To Be Decided (TBD)</h2>
+        <div className="rule-gold w-16 mx-auto my-5" />
+        <p className="text-sm text-muted-foreground max-w-md">
+          The detailed scientific program and daily schedule will be announced soon. Please check back closer to the conference.
+        </p>
       </div>
-
-      {/* <section className="mt-20 grid md:grid-cols-2 gap-6">
-        <div className="border border-border bg-card p-8">
-          <p className="text-[0.7rem] uppercase tracking-[0.28em] text-accent mb-3">Posters</p>
-          <h3 className="font-serif text-2xl text-primary">Call for Posters</h3>
-          <div className="rule-gold w-12 my-4" />
-          <p className="text-muted-foreground leading-relaxed text-sm">
-            Researchers — particularly graduate students and early-career mathematicians — are
-            invited to present posters across both poster sessions. Submit a one-page abstract via
-            the registration portal.
-          </p>
-        </div>
-        <div className="border border-border bg-card p-8">
-          <p className="text-[0.7rem] uppercase tracking-[0.28em] text-accent mb-3">Talks</p>
-          <h3 className="font-serif text-2xl text-primary">Contributed Talks</h3>
-          <div className="rule-gold w-12 my-4" />
-          <p className="text-muted-foreground leading-relaxed text-sm">
-            A limited number of 20-minute contributed talk slots are available. Selection will be
-            made by the scientific committee from submitted abstracts.
-          </p>
-        </div>
-      </section> */}
 
       <p className="text-center text-sm text-muted-foreground italic mt-16">
         A detailed program booklet will be circulated closer to the conference.

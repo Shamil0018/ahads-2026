@@ -21,11 +21,11 @@ export const Route = createFileRoute("/committee")({
 });
 
 const organizing = [
+  { name: "A. Satish Kumar (Convenor)", affil: "IIT Madras" },
+  { name: "S. Sivananthan (Co-Convenor)", affil: "IIT Delhi" },
   { name: "A. Antony Selvan", affil: "IIT Madras" },
   { name: "Ayush Bhandari", affil: "Imperial College London, UK" },
-  { name: "A. Satish Kumar", affil: "IIT Madras" },
   { name: "Niraj Kumar Shukla", affil: "IIT Indore" },
-  { name: "S. Sivananthan", affil: "IIT Delhi" },
   { name: "Bharath Sriperumbudur", affil: "Pennsylvania State University, USA" },
   { name: "Jitendriya Swain", affil: "IIT Bhubaneswar" },
   { name: "D. Venku Naidu", affil: "IIT Hyderabad" },

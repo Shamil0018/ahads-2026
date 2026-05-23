@@ -115,7 +115,7 @@ function SpeakersPage() {
         intro="Distinguished experts presenting at the conference."
       />
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-7 gap-y-12 gap-x-6 mt-16 justify-items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-12 gap-x-6 mt-16 justify-items-center">
         {speakers.map((speaker, i) => (
           <div key={i} className="flex flex-col items-center">
             <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border border-border shadow-sm flex items-center justify-center bg-muted mb-3.5 relative group">
