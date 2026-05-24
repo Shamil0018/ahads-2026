@@ -23,17 +23,17 @@ export const Route = createFileRoute("/registration")({
 
 const feeGroups = [
   {
-    title: "Participants from SAARC countries (USD)",
-    rows: [
-      { particular: "Faculty", early: "200", late: "250" },
-      { particular: "Student / Postdoc", early: "100", late: "125" },
-    ],
-  },
-  {
     title: "Participants from Non-SAARC countries (USD)",
     rows: [
       { particular: "Faculty", early: "300", late: "350" },
       { particular: "Student / Postdoc", early: "250", late: "275" },
+    ],
+  },
+  {
+    title: "Participants from SAARC countries (USD)",
+    rows: [
+      { particular: "Faculty", early: "200", late: "250" },
+      { particular: "Student / Postdoc", early: "100", late: "125" },
     ],
   },
 ];

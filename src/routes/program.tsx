@@ -90,7 +90,7 @@ function ProgramPage() {
         <h2 className="font-serif text-3xl font-semibold text-primary">To Be Decided (TBD)</h2>
         <div className="rule-gold w-16 mx-auto my-5" />
         <p className="text-sm text-muted-foreground max-w-md">
-          The detailed scientific program and daily schedule will be announced soon. Please check back closer to the conference.
+          The detailed scientific program and daily schedule will be announced soon.
         </p>
       </div>
 

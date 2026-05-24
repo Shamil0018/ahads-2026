@@ -42,6 +42,14 @@ const sections = [
       "Indian student attendees may qualify for travel allowance reimbursements, subject to the procurement of funding grants and in strict compliance with Government of India directives.",
     ],
   },
+  {
+    title: "How to Reach",
+    paragraphs: [
+      "By Air & Train: Chennai is served by Chennai International Airport (MAA) and major rail terminals (MAS & MS). Taxis (Uber, Ola) are conveniently available for the 30–45 minute drive to the campus in Guindy-Adyar.",
+      "By Road & Metro: Interstate buses terminate at KCBT or CMBT Koyambedu. From Guindy metro station, taxis and auto-rickshaws are available to complete the short trip to the campus.",
+      "Inside the Campus: IIT Madras is a large green campus. Free campus shuttle buses operate from the main gate to conference venues, including the ICSR Building.",
+    ],
+  },
 ];
 
 function GeneralPage() {
