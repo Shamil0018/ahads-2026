@@ -25,15 +25,15 @@ const feeGroups = [
   {
     title: "Participants from Non-SAARC countries (USD)",
     rows: [
-      { particular: "Faculty", early: "300", late: "350" },
-      { particular: "Student / Postdoc", early: "250", late: "275" },
+      { particular: "Faculty", early: "200", late: "250" },
+      { particular: "Student / Postdoc", early: "100", late: "125" },
     ],
   },
   {
-    title: "Participants from SAARC countries (USD)",
+    title: "Participants from SAARC countries (INR)",
     rows: [
-      { particular: "Faculty", early: "200", late: "250" },
-      { particular: "Student / Postdoc", early: "100", late: "125" },
+      { particular: "Faculty", early: "6000", late: "7000" },
+      { particular: "Student / Postdoc", early: "5000", late: "6000" },
     ],
   },
 ];
