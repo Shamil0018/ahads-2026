@@ -44,14 +44,14 @@ const speakers = [
 ];
 
 const organizers = [
-  "A. Satish Kumar (Convenor)",
-  "S. Sivananthan (Co-Convenor)",
-  "A. Antony Selvan",
   "Ayush Bhandari",
+  "A. Satish Kumar (Convenor)",
+  "D. Venku Naidu",
+  "A. Antony Selvan",
   "Niraj Kumar Shukla",
+  "S. Sivananthan (Co-Convenor)",
   "Bharath Sriperumbudur",
   "Jitendriya Swain",
-  "D. Venku Naidu",
 ];
 
 function HomePage() {
@@ -73,7 +73,7 @@ function HomePage() {
                 brings together eminent mathematicians to share advances in harmonic analysis and modern data science.
               </p>
               <p className="mt-4 text-foreground/90 font-medium leading-relaxed text-base border-l-2 border-accent pl-4 italic">
-                As part of the conference, one session will be devoted to felicitating Prof. R. Radha on the occasion of her 60th birthday.
+                As part of the conference, a special session will be devoted to honoring Prof. R. Radha on the occasion of her 60th birthday, in recognition of her notable contributions to mathematics and in celebration of her inspiring personality.
               </p>
             </div>
 
@@ -133,9 +133,9 @@ function HomePage() {
       <section className="border-t border-border bg-secondary/20">
         <div className="container-prose py-16 max-w-4xl text-center">
           <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-2">
-            Confirmed Speakers
+            Invited Speakers
           </p>
-          <h2 className="font-serif text-2xl text-primary">Plenary Lectures</h2>
+          {/* <h2 className="font-serif text-2xl text-primary">Plenary Lectures</h2> */}
           <div className="rule-gold w-16 mx-auto mt-4 mb-8" />
           
           <div className="grid grid-cols-2 md:grid-cols-5 gap-x-8 gap-y-6 max-w-5xl mx-auto text-center">

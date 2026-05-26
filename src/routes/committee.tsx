@@ -21,18 +21,19 @@ export const Route = createFileRoute("/committee")({
 });
 
 const organizing = [
-  { name: "A. Satish Kumar (Convenor)", affil: "IIT Madras" },
-  { name: "S. Sivananthan (Co-Convenor)", affil: "IIT Delhi" },
-  { name: "A. Antony Selvan", affil: "IIT Madras" },
   { name: "Ayush Bhandari", affil: "Imperial College London, UK" },
+  { name: "A. Satish Kumar (Convenor)", affil: "IIT Madras" },
+  { name: "D. Venku Naidu", affil: "IIT Hyderabad" },
+  { name: "A. Antony Selvan", affil: "IIT Madras" },
   { name: "Niraj Kumar Shukla", affil: "IIT Indore" },
+  { name: "S. Sivananthan (Co-Convenor)", affil: "IIT Delhi" },
   { name: "Bharath Sriperumbudur", affil: "Pennsylvania State University, USA" },
   { name: "Jitendriya Swain", affil: "IIT Bhubaneswar" },
-  { name: "D. Venku Naidu", affil: "IIT Hyderabad" },
 ];
 
 const scientific = [
   { name: "Akram Aldroubi", affil: "Vanderbilt University, USA" },
+  { name: "Biswaranjan Behera", affil: "ISI Kolkata" },
   { name: "Alex Iosevich", affil: "University of Rochester, USA" },
   { name: "E.K. Narayanan", affil: "Indian Institute of Science, Bengaluru" },
   { name: "Sergei Pereverzyev", affil: "Johann Radon Institute, Austria" },
