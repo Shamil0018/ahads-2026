@@ -125,10 +125,10 @@ function SpeakersPage() {
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </div>
-            <h3 className="font-serif text-sm font-semibold text-foreground text-center leading-snug">
+            <h3 className="font-serif text-base font-semibold text-foreground text-center leading-snug">
               {speaker.name}
             </h3>
-            <p className="text-[0.7rem] text-muted-foreground text-center mt-1.5 leading-tight max-w-[130px]">
+            <p className="text-xs text-muted-foreground text-center mt-1.5 leading-tight max-w-[130px]">
               {speaker.affiliation}
             </p>
           </div>

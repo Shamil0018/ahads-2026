@@ -57,8 +57,8 @@ function CommitteePage() {
           <ul className="divide-y divide-border border-y border-border">
             {organizing.map((m) => (
               <li key={m.name} className="py-2.5 flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                <span className="font-serif text-base text-foreground font-semibold">{m.name}</span>
-                <span className="text-xs text-muted-foreground italic">{m.affil}</span>
+                <span className="font-serif text-lg text-foreground font-semibold">{m.name}</span>
+                <span className="text-sm text-muted-foreground italic">{m.affil}</span>
               </li>
             ))}
           </ul>
@@ -71,8 +71,8 @@ function CommitteePage() {
           <ul className="divide-y divide-border border-y border-border">
             {scientific.map((m) => (
               <li key={m.name} className="py-2.5 flex flex-col sm:flex-row sm:justify-between sm:items-baseline gap-1">
-                <span className="font-serif text-base text-foreground font-semibold">{m.name}</span>
-                <span className="text-xs text-muted-foreground italic">{m.affil}</span>
+                <span className="font-serif text-lg text-foreground font-semibold">{m.name}</span>
+                <span className="text-sm text-muted-foreground italic">{m.affil}</span>
               </li>
             ))}
           </ul>

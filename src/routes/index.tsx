@@ -101,6 +101,8 @@ function HomePage() {
                   "Sampling and reconstruction theory",
                   "Statistical learning and kernel methods",
                   "Mathematical foundations of deep learning",
+                  "Graph signal processing",
+                  "Compressed sensing and sparse recovery",
                 ].map((t) => (
                   <li key={t} className="flex gap-2 leading-relaxed">
                     <span className="text-accent mt-1.5 shrink-0 text-[0.6rem]">◆</span>

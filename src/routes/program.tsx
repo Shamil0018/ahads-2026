@@ -80,20 +80,22 @@ function ProgramPage() {
   return (
     <div className="container-prose py-20">
       <PageHeader
-        eyebrow="Scientific Program [TBD]"
+        eyebrow="Scientific Program [TBA]"
         title="Four Days of Lectures, Talks and Discussions"
-        intro="The tentative daily schedule, featuring plenary lectures, contributed talks, and poster sessions. Session chairs and topics are currently to be decided (TBD)."
+        intro="The tentative daily schedule, featuring plenary lectures, contributed talks, and poster sessions. Session chairs and topics are currently to be announced (TBA)."
       />
 
-      <div className="flex flex-col items-center justify-center border border-border bg-card p-12 text-center mt-12 shadow-soft">
-        <p className="text-[0.75rem] uppercase tracking-[0.4em] font-semibold text-accent mb-2">Schedule</p>
-        <h2 className="font-serif text-3xl font-semibold text-primary">To Be Decided (TBD)</h2>
-        <div className="rule-gold w-16 mx-auto my-5" />
-        <p className="text-sm text-muted-foreground max-w-md">
-          The detailed scientific program and daily schedule will be announced soon.
-        </p>
+      <div className="max-w-xl mx-auto mt-16 text-center">
+        <div className="border border-border/80 bg-secondary/20 p-12 shadow-soft rounded-sm backdrop-blur-sm relative overflow-hidden group">
+          <div className="absolute inset-0 bg-gradient-to-tr from-accent/5 via-transparent to-transparent opacity-50" />
+          <p className="text-xs uppercase tracking-[0.3em] text-accent font-semibold mb-3">Schedule</p>
+          <h2 className="font-serif text-3xl text-primary font-bold mb-4">To Be Announced (TBA)</h2>
+          <div className="rule-gold w-20 mx-auto my-5" />
+          <p className="text-muted-foreground text-sm leading-relaxed">
+            The detailed scientific program and daily schedule will be announced soon.
+          </p>
+        </div>
       </div>
-
       <p className="text-center text-sm text-muted-foreground italic mt-16">
         A detailed program booklet will be circulated closer to the conference.
       </p>

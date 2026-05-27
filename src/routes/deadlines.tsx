@@ -22,7 +22,8 @@ export const Route = createFileRoute("/deadlines")({
 
 const dates = [
   { date: "01 June 2026", label: "Registration portal opens" },
-  { date: "31 August 2026", label: "Abstract submission & Early registration deadline (talks & posters)" },
+  { date: "31 August 2026", label: "Early registration deadline" },
+  { date: "15 September 2026", label: "Abstract submission deadline" },
   { date: "30 September 2026", label: "Late registration & payment deadline" },
   { date: "15 October 2026", label: "Notification of acceptance" },
   { date: "15–18 December 2026", label: "Conference at IIT Madras" },
