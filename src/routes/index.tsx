@@ -70,7 +70,8 @@ function HomePage() {
                 We welcome you to the International Conference on{" "}
                 <em className="text-foreground font-medium">Applied Harmonic Analysis and Data Science</em>,
                 hosted by the Department of Mathematics at the Indian Institute of Technology Madras. This event
-                brings together eminent mathematicians to share advances in harmonic analysis and modern data science.
+                brings together eminent mathematicians to share recent advances in harmonic analysis and modern data science,
+                and to foster interaction and collaboration among researchers and students.
               </p>
               <p className="mt-4 text-foreground/90 font-medium leading-relaxed text-base border-l-2 border-accent pl-4 italic">
                 As part of the conference, a special session will be devoted to honoring Prof. R. Radha on the occasion of her 60th birthday, in recognition of her notable contributions to mathematics and in celebration of her inspiring personality.
