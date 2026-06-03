@@ -25,7 +25,7 @@ function ContactPage() {
 
       <div className="max-w-xl mx-auto mt-16 space-y-12">
         {/* Contact Info */}
-        <div className="grid grid-cols-1 gap-8 border-y border-border py-8">
+        <div className="border-y border-border py-8">
           <div>
             <h3 className="text-xs uppercase tracking-wider text-accent font-semibold mb-2">Address</h3>
             <p className="font-serif text-lg text-foreground leading-relaxed">
@@ -33,28 +33,6 @@ function ContactPage() {
               Indian Institute of Technology Madras<br />
               Sardar Patel Road, Chennai 600036, India
             </p>
-          </div>
-
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-accent font-semibold mb-2">Call Us</h3>
-              <a
-                href="tel:+914422574600"
-                className="font-serif text-lg text-primary hover:text-accent transition-colors block"
-              >
-                +91 44 2257 4600
-              </a>
-            </div>
-
-            <div>
-              <h3 className="text-xs uppercase tracking-wider text-accent font-semibold mb-2">Email Us</h3>
-              <a
-                href="mailto:ahads2026@iitm.ac.in"
-                className="font-serif text-lg text-primary hover:text-accent transition-colors block"
-              >
-                ahads2026@iitm.ac.in
-              </a>
-            </div>
           </div>
         </div>
 

@@ -82,13 +82,16 @@ function ProgramPage() {
       <PageHeader
         eyebrow="Scientific Program [TBA]"
         title="Four Days of Lectures, Talks and Discussions"
-        intro="The tentative daily schedule, featuring plenary lectures, contributed talks, and poster sessions. Session chairs and topics are currently to be announced (TBA)."
+        intro=""
       />
 
       <div className="max-w-xl mx-auto mt-16 text-center">
         <div className="border border-border/80 bg-secondary/20 p-12 shadow-soft rounded-sm backdrop-blur-sm relative overflow-hidden group">
           <div className="absolute inset-0 bg-gradient-to-tr from-accent/5 via-transparent to-transparent opacity-50" />
-          <p className="text-xs uppercase tracking-[0.3em] text-accent font-semibold mb-3">Schedule</p>
+          <div className="flex justify-between items-baseline mb-5 text-xs uppercase tracking-[0.25em] text-accent font-semibold border-b border-border/60 pb-3">
+            <span>Schedule</span>
+            <span className="font-sans text-[0.72rem] tracking-[0.1em] font-bold text-foreground/80">15–18th Dec</span>
+          </div>
           <h2 className="font-serif text-3xl text-primary font-bold mb-4">To Be Announced (TBA)</h2>
           <div className="rule-gold w-20 mx-auto my-5" />
           <p className="text-muted-foreground text-sm leading-relaxed">
@@ -96,9 +99,6 @@ function ProgramPage() {
           </p>
         </div>
       </div>
-      <p className="text-center text-sm text-muted-foreground italic mt-16">
-        A detailed program booklet will be circulated closer to the conference.
-      </p>
     </div>
   );
 }

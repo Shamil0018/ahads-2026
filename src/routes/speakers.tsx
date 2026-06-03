@@ -56,7 +56,7 @@ const speakers = [
   },
   {
     name: "Felix Krahmer",
-    affiliation: "TU Munich, Germany",
+    affiliation: "TU Darmstadt, Germany",
     image: imgKrahmer,
   },
   {
@@ -115,7 +115,7 @@ function SpeakersPage() {
         intro="Distinguished experts presenting at the conference."
       />
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-y-12 gap-x-6 mt-16 justify-items-center">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-12 gap-x-6 mt-16 justify-items-center">
         {speakers.map((speaker, i) => (
           <div key={i} className="flex flex-col items-center">
             <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border border-border shadow-sm flex items-center justify-center bg-muted mb-3.5 relative group">
@@ -125,10 +125,10 @@ function SpeakersPage() {
                 className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
               />
             </div>
-            <h3 className="font-serif text-base font-semibold text-foreground text-center leading-snug">
+            <h3 className="font-serif text-lg font-semibold text-foreground text-center leading-snug">
               {speaker.name}
             </h3>
-            <p className="text-xs text-muted-foreground text-center mt-1.5 leading-tight max-w-[130px]">
+            <p className="text-sm text-muted-foreground text-center mt-1.5 leading-tight max-w-[130px]">
               {speaker.affiliation}
             </p>
           </div>

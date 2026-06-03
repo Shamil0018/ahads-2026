@@ -31,7 +31,7 @@ const speakers = [
   { name: "Biswaranjan Behera", affiliation: "ISI Kolkata, India" },
   { name: "Ayush Bhandari", affiliation: "Imperial College London, UK" },
   { name: "Alex Iosevich", affiliation: "University of Rochester, USA" },
-  { name: "Felix Krahmer", affiliation: "TU Munich, Germany" },
+  { name: "Felix Krahmer", affiliation: "TU Darmstadt, Germany" },
   { name: "Franz Luef", affiliation: "Norwegian University of Science and Technology, Norway" },
   { name: "E.K. Narayanan", affiliation: "IISc Bangalore, India" },
   { name: "Rahul Parhi", affiliation: "University of California San Diego, USA" },
@@ -44,12 +44,12 @@ const speakers = [
 ];
 
 const organizers = [
+  "A. Sathish Kumar (Convenor)",
+  "S. Sivananthan (Co-Convenor)",
   "Ayush Bhandari",
-  "A. Satish Kumar (Convenor)",
   "D. Venku Naidu",
   "A. Antony Selvan",
   "Niraj Kumar Shukla",
-  "S. Sivananthan (Co-Convenor)",
   "Bharath Sriperumbudur",
   "Jitendriya Swain",
 ];
@@ -144,8 +144,8 @@ function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-5 gap-x-8 gap-y-6 max-w-5xl mx-auto text-center">
             {speakers.map((s) => (
               <div key={s.name} className="flex flex-col items-center">
-                <span className="font-serif text-base font-semibold text-foreground leading-tight">{s.name}</span>
-                <span className="text-[0.7rem] text-muted-foreground mt-1 line-clamp-1">{s.affiliation}</span>
+                <span className="font-serif text-lg font-semibold text-foreground leading-tight">{s.name}</span>
+                <span className="text-xs text-muted-foreground mt-1.5 line-clamp-1">{s.affiliation}</span>
               </div>
             ))}
           </div>
@@ -173,7 +173,7 @@ function HomePage() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-x-8 gap-y-6 max-w-4xl mx-auto text-center">
             {organizers.map((o) => (
               <div key={o} className="flex flex-col items-center">
-                <span className="font-serif text-base font-semibold text-foreground">{o}</span>
+                <span className="font-serif text-lg font-semibold text-foreground">{o}</span>
               </div>
             ))}
           </div>
@@ -200,6 +200,27 @@ function HomePage() {
             >
               Registration
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Sponsors */}
+      <section className="border-t border-border bg-secondary/20">
+        <div className="container-prose py-16 max-w-4xl text-center">
+          <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-2">
+            Sponsors
+          </p>
+          <h2 className="font-serif text-2xl text-primary">Supported by</h2>
+          <div className="rule-gold w-16 mx-auto mt-4 mb-8" />
+
+          <div className="flex flex-col items-center justify-center gap-4">
+            <div className="w-16 h-16 border border-dashed border-border rounded-full flex items-center justify-center bg-card text-muted-foreground">
+              {/* Space for Sponsor Icon */}
+              <span className="text-[0.6rem] uppercase tracking-wider font-semibold">Icon</span>
+            </div>
+            <div>
+              <h3 className="font-serif text-lg font-semibold text-foreground">Global Engagement, IIT Madras</h3>
+            </div>
           </div>
         </div>
       </section>
