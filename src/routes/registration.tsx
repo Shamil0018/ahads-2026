@@ -129,7 +129,7 @@ function RegistrationPage() {
             Open Registration Portal
           </a>
           <p className="mt-4 text-xs text-muted-foreground">
-            The portal will open on <span className="text-accent">1 June 2026</span>.
+            The registration portal will open soon.
           </p>
         </div>
 
@@ -138,7 +138,7 @@ function RegistrationPage() {
           <PageHeader
             eyebrow="Call for Abstracts"
             title="Abstract Submission"
-            intro="Please submit your one-page abstract in PDF format via the online portal."
+            intro="Please submit your abstract in PDF format via the online portal."
           />
 
           <div className="text-center mt-10">
@@ -149,7 +149,7 @@ function RegistrationPage() {
               Open Abstract Submission Portal
             </a>
             <p className="mt-4 text-xs text-muted-foreground">
-              The portal will open on <span className="text-accent">1 June 2026</span>.
+              The abstract submission portal will open soon.
             </p>
           </div>
         </div>

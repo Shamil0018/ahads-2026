@@ -112,7 +112,6 @@ function SpeakersPage() {
       <PageHeader
         eyebrow="Invited Speakers"
         title="Speakers"
-        intro="Distinguished experts presenting at the conference."
       />
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-12 gap-x-6 mt-16 justify-items-center">

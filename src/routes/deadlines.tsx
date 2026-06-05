@@ -21,7 +21,7 @@ export const Route = createFileRoute("/deadlines")({
 });
 
 const dates = [
-  { date: "01 June 2026", label: "Registration portal opens" },
+  { date: "15 June 2026", label: "Registration & abstract portal opens" },
   { date: "31 August 2026", label: "Early registration deadline" },
   { date: "15 September 2026", label: "Abstract submission deadline" },
   { date: "30 September 2026", label: "Late registration & payment deadline" },
