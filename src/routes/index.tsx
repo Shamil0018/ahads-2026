@@ -1,5 +1,6 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import radhaImage from "@/assets/Prof. Radha 2.jpg";
+import iitmLogo from "@/assets/iitm logo.png";
 
 
 export const Route = createFileRoute("/")({
@@ -214,9 +215,12 @@ function HomePage() {
           <div className="rule-gold w-16 mx-auto mt-4 mb-8" />
 
           <div className="flex flex-col items-center justify-center gap-4">
-            <div className="w-16 h-16 border border-dashed border-border rounded-full flex items-center justify-center bg-card text-muted-foreground">
-              {/* Space for Sponsor Icon */}
-              <span className="text-[0.6rem] uppercase tracking-wider font-semibold">Icon</span>
+            <div className="w-20 h-20 flex items-center justify-center bg-transparent">
+              <img
+                src={iitmLogo}
+                alt="IIT Madras Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
             <div>
               <h3 className="font-serif text-lg font-semibold text-foreground">Global Engagement, IIT Madras</h3>
