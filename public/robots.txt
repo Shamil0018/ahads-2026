@@ -1,4 +1,3 @@
 User-agent: *
 Allow: /
-
 Sitemap: https://ahads2026.in/sitemap.xml
