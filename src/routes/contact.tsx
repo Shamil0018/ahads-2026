@@ -25,13 +25,24 @@ function ContactPage() {
 
       <div className="max-w-xl mx-auto mt-16 space-y-12">
         {/* Contact Info */}
-        <div className="border-y border-border py-8">
+        <div className="border-y border-border py-8 grid sm:grid-cols-2 gap-8">
           <div>
             <h3 className="text-xs uppercase tracking-wider text-accent font-semibold mb-2">Address</h3>
             <p className="font-serif text-lg text-foreground leading-relaxed">
               Department of Mathematics<br />
               Indian Institute of Technology Madras<br />
               Sardar Patel Road, Chennai 600036, India
+            </p>
+          </div>
+          <div>
+            <h3 className="text-xs uppercase tracking-wider text-accent font-semibold mb-2">Email</h3>
+            <p className="font-serif text-lg text-foreground leading-relaxed">
+              <a
+                href="mailto:icahads2026@gmail.com"
+                className="text-primary border-b border-accent pb-0.5 hover:text-accent transition-colors"
+              >
+                icahads2026@gmail.com
+              </a>
             </p>
           </div>
         </div>

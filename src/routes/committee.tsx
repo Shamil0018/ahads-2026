@@ -94,10 +94,10 @@ function CommitteePage() {
         <p className="mt-5 text-sm text-muted-foreground">
           Email:{" "}
           <a
-            href="mailto:ahads2026@iitm.ac.in"
+            href="mailto:icahads2026@gmail.com"
             className="text-primary border-b border-accent pb-0.5 hover:text-accent"
           >
-            ahads2026@iitm.ac.in
+            icahads2026@gmail.com
           </a>
         </p>
       </div>
