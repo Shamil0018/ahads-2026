@@ -109,10 +109,7 @@ const speakers = [
 function SpeakersPage() {
   return (
     <div className="container-prose py-20">
-      <PageHeader
-        eyebrow="Invited Speakers"
-        title="Speakers"
-      />
+      <PageHeader eyebrow="Invited Speakers" title="Speakers" />
 
       <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-y-12 gap-x-6 mt-16 justify-items-center">
         {speakers.map((speaker, i) => (

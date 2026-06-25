@@ -37,7 +37,11 @@ function GalleryPage() {
           {uploadedImages.map((src, i) => (
             <div key={i} className="group relative">
               <div className="w-full h-64 rounded-sm bg-muted border border-border flex items-center justify-center overflow-hidden shadow-soft">
-                <img src={src} alt={`Gallery image ${i + 1}`} className="w-full h-full object-cover" />
+                <img
+                  src={src}
+                  alt={`Gallery image ${i + 1}`}
+                  className="w-full h-full object-cover"
+                />
               </div>
             </div>
           ))}

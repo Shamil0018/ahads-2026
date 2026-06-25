@@ -8,8 +8,7 @@ export const Route = createFileRoute("/registration")({
       { title: "Registration · AHA & DS 2026" },
       {
         name: "description",
-        content:
-          "Registration fees and process for the AHA & DS 2026 conference at IIT Madras.",
+        content: "Registration fees and process for the AHA & DS 2026 conference at IIT Madras.",
       },
       { property: "og:title", content: "Registration · AHA & DS 2026" },
       {
@@ -23,14 +22,14 @@ export const Route = createFileRoute("/registration")({
 
 const feeGroups = [
   {
-    title: "Participants from Non-SAARC countries (USD)",
+    title: "International Participants (USD)",
     rows: [
       { particular: "Faculty", early: "200", late: "250" },
       { particular: "Student / Postdoc", early: "100", late: "125" },
     ],
   },
   {
-    title: "Participants from SAARC countries (INR)",
+    title: "National Participants (INR)",
     rows: [
       { particular: "Faculty", early: "6000", late: "7000" },
       { particular: "Student / Postdoc", early: "5000", late: "6000" },
@@ -41,11 +40,7 @@ const feeGroups = [
 function RegistrationPage() {
   return (
     <div className="container-prose py-20">
-      <PageHeader
-        eyebrow="Participation"
-        title="Registration"
-        intro=""
-      />
+      <PageHeader eyebrow="Participation" title="Registration" intro="" />
 
       <div className="max-w-4xl mx-auto">
         <h2 className="font-serif text-2xl text-primary text-center">Registration Fees</h2>
@@ -58,14 +53,14 @@ function RegistrationPage() {
                 <th className="py-4 px-6 font-semibold">Particular</th>
                 <th className="py-4 px-6 font-semibold">
                   Early Registration
-                  <span className="block text-[0.65rem] text-muted-foreground lowercase normal-case font-normal mt-0.5">
-                    (Until August 31, 2026)
+                  <span className="block text-[0.65rem] text-muted-foreground normal-case font-normal mt-0.5">
+                    (Until September 15, 2026)
                   </span>
                 </th>
                 <th className="py-4 px-6 font-semibold">
                   Late Registration
-                  <span className="block text-[0.65rem] text-muted-foreground lowercase normal-case font-normal mt-0.5">
-                    (September 1–30, 2026)
+                  <span className="block text-[0.65rem] text-muted-foreground normal-case font-normal mt-0.5">
+                    (Until October 15, 2026)
                   </span>
                 </th>
               </tr>
@@ -75,10 +70,7 @@ function RegistrationPage() {
                 <React.Fragment key={group.title}>
                   {/* Category Header Row */}
                   <tr className="bg-secondary/35 border-b border-border font-serif">
-                    <td
-                      colSpan={3}
-                      className="py-3.5 px-6 text-sm font-semibold text-primary"
-                    >
+                    <td colSpan={3} className="py-3.5 px-6 text-sm font-semibold text-primary">
                       {group.title}
                     </td>
                   </tr>
@@ -91,12 +83,8 @@ function RegistrationPage() {
                       <td className="py-4 px-6 font-serif text-foreground text-sm">
                         {row.particular}
                       </td>
-                      <td className="py-4 px-6 text-accent font-medium text-sm">
-                        {row.early}
-                      </td>
-                      <td className="py-4 px-6 text-muted-foreground text-sm">
-                        {row.late}
-                      </td>
+                      <td className="py-4 px-6 text-accent font-medium text-sm">{row.early}</td>
+                      <td className="py-4 px-6 text-muted-foreground text-sm">{row.late}</td>
                     </tr>
                   ))}
                 </React.Fragment>
@@ -107,7 +95,9 @@ function RegistrationPage() {
 
         <p className="mt-4 text-xs text-muted-foreground leading-relaxed flex items-start gap-2">
           <span>•</span>
-          <span>Registration fees include the GST charges of 18% to be paid to the Government of India.</span>
+          <span>
+            Registration fees include the GST charges of 18% to be paid to the Government of India.
+          </span>
         </p>
 
         <div className="mt-14 grid md:grid-cols-2 gap-6">
@@ -121,37 +111,15 @@ function RegistrationPage() {
           />
         </div>
 
-        <div className="text-center mt-14">
+        <div id="abstracts" className="mt-16 text-center">
           <a
-            href="#"
-            className="inline-flex items-center border border-primary bg-primary px-9 py-3.5 text-xs uppercase tracking-[0.24em] text-primary-foreground transition-colors hover:bg-ink-deep"
+            href="https://conf.code.iitm.ac.in/conf/ICAHADS_reg/login"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center border border-primary bg-primary px-9 py-3.5 text-xs font-semibold uppercase tracking-[0.24em] text-primary-foreground transition-colors hover:bg-ink-deep"
           >
-            Open Registration Portal
+            Open Registration &amp; Abstract Submission Portal
           </a>
-          <p className="mt-4 text-xs text-muted-foreground">
-            The registration portal will open soon.
-          </p>
-        </div>
-
-        {/* Combined Abstracts Section */}
-        <div id="abstracts" className="mt-24 pt-16 border-t border-border">
-          <PageHeader
-            eyebrow="Call for Abstracts"
-            title="Abstract Submission"
-            intro="Please submit your abstract in PDF format via the online portal."
-          />
-
-          <div className="text-center mt-10">
-            <a
-              href="#"
-              className="inline-flex items-center border border-primary bg-primary px-9 py-3.5 text-xs uppercase tracking-[0.24em] text-primary-foreground transition-colors hover:bg-ink-deep"
-            >
-              Open Abstract Submission Portal
-            </a>
-            <p className="mt-4 text-xs text-muted-foreground">
-              The abstract submission portal will open soon.
-            </p>
-          </div>
         </div>
       </div>
     </div>
@@ -167,4 +135,3 @@ function InfoCard({ title, body }: { title: string; body: string }) {
     </div>
   );
 }
-

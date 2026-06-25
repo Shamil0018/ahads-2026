@@ -2,7 +2,6 @@ import { createFileRoute, Link } from "@tanstack/react-router";
 import radhaImage from "@/assets/Prof. Radha 2.jpg";
 import iitmLogo from "@/assets/iitm logo.png";
 
-
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
@@ -18,8 +17,7 @@ export const Route = createFileRoute("/")({
       },
       {
         property: "og:description",
-        content:
-          "International conference at IIT Madras, Chennai · 15–18 December 2026.",
+        content: "International conference at IIT Madras, Chennai · 15–18 December 2026.",
       },
     ],
   }),
@@ -64,36 +62,47 @@ function HomePage() {
           {/* Welcome Text, Dates, Venue, and Themes */}
           <div className="md:col-span-2 space-y-6">
             <div>
-              <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-2">
-                Welcome
-              </p>
+              <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-2">Welcome</p>
               <p className="text-foreground/80 leading-relaxed text-base">
                 We welcome you to the International Conference on{" "}
-                <em className="text-foreground font-medium">Applied Harmonic Analysis and Data Science</em>,
-                hosted by the Department of Mathematics at the Indian Institute of Technology Madras. This event
-                brings together eminent mathematicians to share recent advances in harmonic analysis and modern data science,
-                and to foster interaction and collaboration among researchers and students.
+                <em className="text-foreground font-medium">
+                  Applied Harmonic Analysis and Data Science
+                </em>
+                , hosted by the Department of Mathematics at the Indian Institute of Technology
+                Madras. This event brings together eminent mathematicians to share recent advances
+                in harmonic analysis and modern data science, and to foster interaction and
+                collaboration among researchers and students.
               </p>
               <p className="mt-4 text-foreground/90 font-medium leading-relaxed text-base border-l-2 border-accent pl-4 italic">
-                As part of the conference, a special session will be devoted to honoring Prof. R. Radha on the occasion of her 60th birthday, in recognition of her notable contributions to mathematics and in celebration of her inspiring personality.
+                As part of the conference, a special session will be devoted to honoring Prof. R.
+                Radha on the occasion of her 60th birthday, in recognition of her notable
+                contributions to mathematics and in celebration of her inspiring personality.
               </p>
             </div>
 
             {/* Date & Venue in small font */}
             <div className="pt-6 border-t border-rule grid sm:grid-cols-2 gap-4">
               <div>
-                <p className="text-[0.65rem] uppercase tracking-[0.2em] text-accent font-semibold mb-1">Dates</p>
+                <p className="text-[0.65rem] uppercase tracking-[0.2em] text-accent font-semibold mb-1">
+                  Dates
+                </p>
                 <p className="text-sm font-semibold text-foreground">15 – 18 December 2026</p>
               </div>
               <div>
-                <p className="text-[0.65rem] uppercase tracking-[0.2em] text-accent font-semibold mb-1">Venue</p>
-                <p className="text-sm font-semibold text-foreground">Indian Institute of Technology Madras, Chennai, India</p>
+                <p className="text-[0.65rem] uppercase tracking-[0.2em] text-accent font-semibold mb-1">
+                  Venue
+                </p>
+                <p className="text-sm font-semibold text-foreground">
+                  Indian Institute of Technology Madras, Chennai, India
+                </p>
               </div>
             </div>
 
             {/* Topics / Themes listed just below welcome */}
             <div className="pt-6 border-t border-rule">
-              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-accent font-semibold mb-3">Conference Themes</p>
+              <p className="text-[0.65rem] uppercase tracking-[0.2em] text-accent font-semibold mb-3">
+                Conference Themes
+              </p>
               <ul className="grid sm:grid-cols-2 gap-x-6 gap-y-2 text-sm text-foreground/80">
                 {[
                   "Harmonic analysis",
@@ -118,11 +127,7 @@ function HomePage() {
           {/* Prof. R. Radha Photo */}
           <div className="md:col-span-1 flex flex-col items-center">
             <div className="w-56 h-72 border border-border bg-card rounded-md shadow-soft overflow-hidden flex flex-col items-center justify-center relative group">
-              <img
-                src={radhaImage}
-                alt="Prof. R. Radha"
-                className="w-full h-full object-cover"
-              />
+              <img src={radhaImage} alt="Prof. R. Radha" className="w-full h-full object-cover" />
               <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-background via-background/80 to-transparent p-4 pt-10 text-center">
                 <p className="text-xs uppercase tracking-[0.15em] font-semibold text-primary">
                   Prof. R. Radha
@@ -141,12 +146,16 @@ function HomePage() {
           </p>
           {/* <h2 className="font-serif text-2xl text-primary">Plenary Lectures</h2> */}
           <div className="rule-gold w-16 mx-auto mt-4 mb-8" />
-          
+
           <div className="grid grid-cols-2 md:grid-cols-5 gap-x-8 gap-y-6 max-w-5xl mx-auto text-center">
             {speakers.map((s) => (
               <div key={s.name} className="flex flex-col items-center">
-                <span className="font-serif text-lg font-semibold text-foreground leading-tight">{s.name}</span>
-                <span className="text-xs text-muted-foreground mt-1.5 line-clamp-1">{s.affiliation}</span>
+                <span className="font-serif text-lg font-semibold text-foreground leading-tight">
+                  {s.name}
+                </span>
+                <span className="text-xs text-muted-foreground mt-1.5 line-clamp-1">
+                  {s.affiliation}
+                </span>
               </div>
             ))}
           </div>
@@ -208,22 +217,18 @@ function HomePage() {
       {/* Sponsors */}
       <section className="border-t border-border bg-secondary/20">
         <div className="container-prose py-16 max-w-4xl text-center">
-          <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-2">
-            Sponsors
-          </p>
+          <p className="text-[0.7rem] uppercase tracking-[0.32em] text-accent mb-2">Sponsors</p>
           <h2 className="font-serif text-2xl text-primary">Supported by</h2>
           <div className="rule-gold w-16 mx-auto mt-4 mb-8" />
 
           <div className="flex flex-col items-center justify-center gap-4">
             <div className="w-20 h-20 flex items-center justify-center bg-transparent">
-              <img
-                src={iitmLogo}
-                alt="IIT Madras Logo"
-                className="w-full h-full object-contain"
-              />
+              <img src={iitmLogo} alt="IIT Madras Logo" className="w-full h-full object-contain" />
             </div>
             <div>
-              <h3 className="font-serif text-lg font-semibold text-foreground">Global Engagement, IIT Madras</h3>
+              <h3 className="font-serif text-lg font-semibold text-foreground">
+                Global Engagement, IIT Madras
+              </h3>
             </div>
           </div>
         </div>
@@ -231,4 +236,3 @@ function HomePage() {
     </div>
   );
 }
-
