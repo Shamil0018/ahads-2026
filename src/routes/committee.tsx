@@ -37,7 +37,9 @@ const scientific = [
   { name: "Alex Iosevich", affil: "University of Rochester, USA" },
   { name: "E.K. Narayanan", affil: "Indian Institute of Science, Bengaluru" },
   { name: "Sergei Pereverzyev", affil: "Johann Radon Institute, Austria" },
+  { name: "Qiyu Sun", affil: "University of Central Florida, USA" },
   { name: "S. Thangavelu", affil: "Indian Institute of Science, Bengaluru" },
+  { name: "Ding-Xuan Zhou", affil: "University of Sydney, Australia" },
 ];
 
 function CommitteePage() {

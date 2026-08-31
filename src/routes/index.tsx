@@ -37,9 +37,11 @@ const speakers = [
   { name: "Sergei Pereverzyev", affiliation: "Johann Radon Institute, Austria" },
   { name: "Niraj Kumar Shukla", affiliation: "IIT Indore, India" },
   { name: "Bharath Sriperumbudur", affiliation: "Pennsylvania State University, USA" },
+  { name: "Qiyu Sun", affiliation: "University of Central Florida, USA" },
   { name: "S. Thangavelu", affiliation: "IISc Bangalore, India" },
   { name: "Sergey Tikhonov", affiliation: "Centre de Recerca Matemàtica, Spain" },
-  { name: "Dingxuan Zhou", affiliation: "University of Sydney, Australia" },
+  { name: "Mario Ullrich", affiliation: "Johannes Kepler University Linz, Austria" },
+  { name: "Ding-Xuan Zhou", affiliation: "University of Sydney, Australia" },
 ];
 
 const organizers = [

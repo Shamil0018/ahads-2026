@@ -16,6 +16,7 @@ import imgShukla from "@/assets/Niraj Kumar Shukla.png";
 import imgSriperumbudur from "@/assets/Bharath Sriperumbudur.jpg";
 import imgThangavelu from "@/assets/S. Thangavelu.jpg";
 import imgTikhonov from "@/assets/Sergey Tikhonov.jpeg";
+import imgUllrich from "@/assets/Mario Ullrich.jpg";
 import imgZhou from "@/assets/Dingxuan Zhou.webp";
 
 export const Route = createFileRoute("/speakers")({
@@ -90,6 +91,10 @@ const speakers = [
     image: imgSriperumbudur,
   },
   {
+    name: "Qiyu Sun",
+    affiliation: "University of Central Florida, USA",
+  },
+  {
     name: "S. Thangavelu",
     affiliation: "IISc Bangalore, India",
     image: imgThangavelu,
@@ -100,7 +105,12 @@ const speakers = [
     image: imgTikhonov,
   },
   {
-    name: "Dingxuan Zhou",
+    name: "Mario Ullrich",
+    affiliation: "Johannes Kepler University Linz, Austria",
+    image: imgUllrich,
+  },
+  {
+    name: "Ding-Xuan Zhou",
     affiliation: "University of Sydney, Australia",
     image: imgZhou,
   },
@@ -115,11 +125,20 @@ function SpeakersPage() {
         {speakers.map((speaker, i) => (
           <div key={i} className="flex flex-col items-center">
             <div className="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden border border-border shadow-sm flex items-center justify-center bg-muted mb-3.5 relative group">
-              <img
-                src={speaker.image}
-                alt={speaker.name}
-                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-              />
+              {speaker.image ? (
+                <img
+                  src={speaker.image}
+                  alt={speaker.name}
+                  className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+                />
+              ) : (
+                <div className="w-full h-full flex items-center justify-center bg-accent/10 text-primary font-serif font-bold text-xl sm:text-2xl">
+                  {speaker.name
+                    .split(" ")
+                    .map((n) => n[0])
+                    .join("")}
+                </div>
+              )}
             </div>
             <h3 className="font-serif text-lg font-semibold text-foreground text-center leading-snug">
               {speaker.name}
