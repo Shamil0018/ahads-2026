@@ -14,6 +14,7 @@ import imgParhi from "@/assets/Rahul Parhi.webp";
 import imgPereverzyev from "@/assets/Sergei Pereverzyev.jpeg";
 import imgShukla from "@/assets/Niraj Kumar Shukla.png";
 import imgSriperumbudur from "@/assets/Bharath Sriperumbudur.jpg";
+import imgSun from "@/assets/Qiyu Sun.jpg";
 import imgThangavelu from "@/assets/S. Thangavelu.jpg";
 import imgTikhonov from "@/assets/Sergey Tikhonov.jpeg";
 import imgUllrich from "@/assets/Mario Ullrich.jpg";
@@ -93,6 +94,7 @@ const speakers = [
   {
     name: "Qiyu Sun",
     affiliation: "University of Central Florida, USA",
+    image: imgSun,
   },
   {
     name: "S. Thangavelu",
