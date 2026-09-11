@@ -9,6 +9,7 @@ import imgBhandari from "@/assets/Ayush Bhandari.jpeg";
 import imgIosevich from "@/assets/Alex Iosevich.jpeg";
 import imgKrahmer from "@/assets/Felix Krahmer.jpg";
 import imgLuef from "@/assets/Franz Luef.jpg";
+import imgAbreu from "@/assets/Luis Daniel Moura de Abreu.jpg";
 import imgNarayanan from "@/assets/E.K. Narayanan.jpg";
 import imgParhi from "@/assets/Rahul Parhi.webp";
 import imgPereverzyev from "@/assets/Sergei Pereverzyev.jpeg";
@@ -65,6 +66,11 @@ const speakers = [
     name: "Franz Luef",
     affiliation: "Norwegian University of Science and Technology, Norway",
     image: imgLuef,
+  },
+  {
+    name: "Luis Daniel Moura de Abreu",
+    affiliation: "Universität Wien, Austria",
+    image: imgAbreu,
   },
   {
     name: "E.K. Narayanan",

@@ -32,6 +32,7 @@ const speakers = [
   { name: "Alex Iosevich", affiliation: "University of Rochester, USA" },
   { name: "Felix Krahmer", affiliation: "TU Darmstadt, Germany" },
   { name: "Franz Luef", affiliation: "Norwegian University of Science and Technology, Norway" },
+  { name: "Luis Daniel Moura de Abreu", affiliation: "Universität Wien, Austria" },
   { name: "E.K. Narayanan", affiliation: "IISc Bangalore, India" },
   { name: "Rahul Parhi", affiliation: "University of California San Diego, USA" },
   { name: "Sergei Pereverzyev", affiliation: "Johann Radon Institute, Austria" },
