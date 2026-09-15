@@ -68,7 +68,7 @@ const speakers = [
     image: imgLuef,
   },
   {
-    name: "Luis Daniel Moura de Abreu",
+    name: "Luis Daniel Abreu",
     affiliation: "Universität Wien, Austria",
     image: imgAbreu,
   },
