@@ -50,11 +50,12 @@ const sections = [
       "Please note that registration pricing is inclusive of the mandatory 18% Goods and Services Tax (GST) as per Government of India regulations.",
     ],
   },
-  {
+    {
     title: "Accommodation",
     paragraphs: [
       "Lodging options feature the IIT Madras guest houses, campus hostels, and Ginger Hotel inside the IITM Research Park, alongside selected local hotels close to the campus. Booking guides and reservation procedures will be announced shortly.",
       "Hostel lodging on campus will be arranged on a paid basis for students, postdoctoral fellows, research associates, and doctoral scholars. Depending on the allocation of sponsorships and funding grants, this accommodation charge may be waived. Further details will be communicated in due course.",
+      "Beware of phishing emails: The organizers have not authorized any third party to handle accommodation bookings. Please do not respond to such emails or share personal or payment details.",
     ],
   },
   {
