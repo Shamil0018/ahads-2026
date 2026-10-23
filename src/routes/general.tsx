@@ -96,7 +96,14 @@ function GeneralPage() {
                     </h3>
                   );
                 }
-                if (p.startsWith("• ")) {
+                if (p.startsWith("Beware of phishing emails")) {
+                  return (
+                    <p key={idx} className="font-bold text-primary">
+                      {p}
+                    </p>
+                  );
+                }
+                if (p.startsWith("• "))  {
                   return (
                     <div key={idx} className="flex gap-2 pl-4">
                       <span className="text-accent shrink-0">◆</span>
