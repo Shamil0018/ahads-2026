@@ -103,7 +103,7 @@ function GeneralPage() {
                     </p>
                   );
                 }
-                if (p.startsWith("• "))  {
+                if (p.startsWith("• ")) {
                   return (
                     <div key={idx} className="flex gap-2 pl-4">
                       <span className="text-accent shrink-0">◆</span>
