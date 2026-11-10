@@ -29,6 +29,7 @@ const speakers = [
   { name: "Davide Barbieri", affiliation: "Universidad Autónoma de Madrid, Spain" },
   { name: "Biswaranjan Behera", affiliation: "ISI Kolkata, India" },
   { name: "Ayush Bhandari", affiliation: "Imperial College London, UK" },
+  { name: "Rahul Garg", affiliation: "IISER Bhopal, India" },
   { name: "Alex Iosevich", affiliation: "University of Rochester, USA" },
   { name: "Felix Krahmer", affiliation: "TU Darmstadt, Germany" },
   { name: "Franz Luef", affiliation: "Norwegian University of Science and Technology, Norway" },
