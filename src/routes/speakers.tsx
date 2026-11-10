@@ -54,9 +54,10 @@ const speakers = [
     image: imgBhandari,
   },
   {
-    name: "Rahul Garg",
-    affiliation: "IISER Bhopal, India",
-  },
+     name: "Rahul Garg",
+     affiliation: "IISER Bhopal, India",
+     image: imgGarg,
+   },
   {
     name: "Alex Iosevich",
     affiliation: "University of Rochester, USA",
