@@ -6,6 +6,7 @@ import imgAldroubi from "@/assets/Akraum Aldroubi.jpeg";
 import imgBarbieri from "@/assets/Davide Barbieri.jpeg";
 import imgBehera from "@/assets/Biswaranjan Behera.jpg";
 import imgBhandari from "@/assets/Ayush Bhandari.jpeg";
+import imgGarg from "@/assets/Rahul Garg.jpg";
 import imgIosevich from "@/assets/Alex Iosevich.jpeg";
 import imgKrahmer from "@/assets/Felix Krahmer.jpg";
 import imgLuef from "@/assets/Franz Luef.jpg";
