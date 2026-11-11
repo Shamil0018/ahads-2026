@@ -32,7 +32,6 @@ const speakers = [
   { name: "Rahul Garg", affiliation: "IISER Bhopal, India" },
   { name: "Alex Iosevich", affiliation: "University of Rochester, USA" },
   { name: "Felix Krahmer", affiliation: "TU Darmstadt, Germany" },
-  { name: "Franz Luef", affiliation: "Norwegian University of Science and Technology, Norway" },
   { name: "Luis Daniel Abreu", affiliation: "Universität Wien, Austria" },
   { name: "E.K. Narayanan", affiliation: "IISc Bangalore, India" },
   { name: "Rahul Parhi", affiliation: "University of California San Diego, USA" },
@@ -41,7 +40,6 @@ const speakers = [
   { name: "Bharath Sriperumbudur", affiliation: "Pennsylvania State University, USA" },
   { name: "Qiyu Sun", affiliation: "University of Central Florida, USA" },
   { name: "S. Thangavelu", affiliation: "IISc Bangalore, India" },
-  { name: "Sergey Tikhonov", affiliation: "Centre de Recerca Matemàtica, Spain" },
   { name: "Mario Ullrich", affiliation: "Johannes Kepler University Linz, Austria" },
   { name: "Ding-Xuan Zhou", affiliation: "University of Sydney, Australia" },
 ];
