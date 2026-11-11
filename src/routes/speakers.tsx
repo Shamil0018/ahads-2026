@@ -9,7 +9,6 @@ import imgBhandari from "@/assets/Ayush Bhandari.jpeg";
 import imgGarg from "@/assets/Rahul Garg.jpg";
 import imgIosevich from "@/assets/Alex Iosevich.jpeg";
 import imgKrahmer from "@/assets/Felix Krahmer.jpg";
-import imgLuef from "@/assets/Franz Luef.jpg";
 import imgAbreu from "@/assets/Luis Daniel Moura de Abreu.jpg";
 import imgNarayanan from "@/assets/E.K. Narayanan.jpg";
 import imgParhi from "@/assets/Rahul Parhi.webp";
@@ -18,7 +17,6 @@ import imgShukla from "@/assets/Niraj Kumar Shukla.png";
 import imgSriperumbudur from "@/assets/Bharath Sriperumbudur.jpg";
 import imgSun from "@/assets/Qiyu Sun.jpg";
 import imgThangavelu from "@/assets/S. Thangavelu.jpg";
-import imgTikhonov from "@/assets/Sergey Tikhonov.jpeg";
 import imgUllrich from "@/assets/Mario Ullrich.jpg";
 import imgZhou from "@/assets/Dingxuan Zhou.webp";
 
@@ -69,11 +67,6 @@ const speakers = [
     image: imgKrahmer,
   },
   {
-    name: "Franz Luef",
-    affiliation: "Norwegian University of Science and Technology, Norway",
-    image: imgLuef,
-  },
-  {
     name: "Luis Daniel Abreu",
     affiliation: "Universität Wien, Austria",
     image: imgAbreu,
@@ -112,11 +105,6 @@ const speakers = [
     name: "S. Thangavelu",
     affiliation: "IISc Bangalore, India",
     image: imgThangavelu,
-  },
-  {
-    name: "Sergey Tikhonov",
-    affiliation: "Centre de Recerca Matemàtica, Spain",
-    image: imgTikhonov,
   },
   {
     name: "Mario Ullrich",
